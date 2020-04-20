@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body {
+        height: 200px;
+        background: beige;
+    }
+    .dot {
+        height: 8px; width: 8px;
+        border-radius: 3px; /* rounds corners */
+        background: lightskyblue;
+        position: absolute;
+    }
+
+    dot { position: absolute; display: block;
+        border: 2px dotted mediumpurple; border-radius: 50px;
+        height: 100px; width: 100px; }
+</style>
+<body>
+
+    <h1>Erilaisia eventtejä</h1>
+    <h3>Perus eventit</h3>
+    <button id="eka">Klikkaa minua</button>
+
+    <br><br>
+
+    <button id="toinen">Klikkaa minua, viittaus funktioon</button>
+
+    <br><br>
+
+    <h3>Propagointi / Laajeneminen</h3>
+    <p>A paragraph with a <button id="kolmas">button</button>.</p>
+    <button class="neljäs">A</button>
+    <button class="neljäs">B</button>
+    <button class="neljäs">C</button>
+
+    <h3>Prevent default</h3>
+    <a href="https://developer.mozilla.org/">MDN</a>
+
+    <br>
+
+    <h3>Key events</h3>
+    <p>Sivu muuttuu vihreäksi painamalla F.</p>
+
+    <br>
+
+    <h3>Mouse motion</h3>
+    <p>Raahaa palkkia isommaksi hiirellä tai muuta kokoa scrollaamalla:</p>
+    <div style="background: palevioletred; width: 60px; height: 20px">
+    </div>
+
+    <br>
+
+    <h3>Focus events</h3>
+    <p>Nimi: <input type="text" data-help="Sinun koko nimi"></p>
+    <p>Ikä: <input type="text" data-help="Ikä vuosina"></p>
+    <p id="help"></p>
+
+    <br>
+
+    <h3>Mouse clicks</h3>
+    <p> Hiiren klikkauksesta jää vaaleansininen jälki.</p>
+
+    <br>
+
+    <h3>Touch events</h3>
+    <p> Koske tätä sivua mobiililaitteella.</p>
+
+    <br>
+
+    <h3>Timers</h3>
+    <p> Selviää consolesta räjähtikö.</p>
+
+    <br>
+
+    <h3>Debouncing</h3>
+    <textarea>Type something here...</textarea>
+
+    <br>
+
+    <h3>Pallotehtävä</h3>
+    <p id="pallo">🎈</p>
+
+    <button onclick="reset()">Reset</button>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
